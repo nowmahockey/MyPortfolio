@@ -1,0 +1,420 @@
+@charset "UTF-8";
+/*--------------------------------
+Media Queries
+---------------------------------*/
+body {
+  overflow-x: hidden;
+}
+
+.pagetop {
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+}
+
+.pagetop a {
+  display: block;
+  background-color: #ccc;
+  text-align: center;
+  color: #222;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.pagetop a:hover {
+  display: block;
+  background-color: #b2d1fb;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+
+/*--------------------------------
+fontstyle
+---------------------------------*/
+.sec-ttl {
+  font-family: "Krungthep", "Lato", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.sec-body {
+  font-family: Helvetica, "游ゴシック", "Yu Gothic", YuGothic, HiraKakuProN-W3, "メイリオ", Meiryo, sans-serif;
+}
+
+.card-ttl {
+  font-family: Helvetica, "游ゴシック", "Yu Gothic", YuGothic, HiraKakuProN-W3, "メイリオ", Meiryo, sans-serif;
+  padding-top: 10px;
+}
+
+/*----------------------------
+box
+---------------------------------*/
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 78%;
+}
+
+/*--------------------------------
+gnav
+---------------------------------*/
+.gnav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.gnav-list li {
+  font-family: "Krungthep", "Lato", sans-serif;
+  font-weight: bold;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.gnav-list li:hover {
+  font-weight: bolder;
+}
+
+/*--------------------------------
+メインビジュアル 
+---------------------------------*/
+.mainVisual {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 270px;
+  padding-bottom: 270px;
+}
+
+/*--------------------------------
+logo
+---------------------------------*/
+.Logo-primary {
+  font-family: "Krungthep", "Lato", sans-serif;
+  font-size: 4rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Logo-sub {
+  font-family: "Krungthep", "Lato", sans-serif;
+  margin: 0 auto;
+  width: 20rem;
+  text-align: center;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+
+/*--------------------------------
+Aboutセクション
+---------------------------------*/
+.about {
+  height: auto;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.about-head {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.about img {
+  width: 60%;
+  height: 60%;
+}
+
+.about-table {
+  width: 35%;
+  height: auto;
+}
+
+.about-table-head {
+  padding-top: 20px;
+  text-align: center;
+  width: 15%;
+}
+
+.about-table-body {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.about-btn-box {
+  height: 100px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.acd-check {
+  display: none;
+}
+
+.acd-label {
+  border: solid 2px #000;
+  text-align: center;
+  color: #000;
+  background: #fff;
+  display: block;
+  margin: 10px auto 1px auto;
+  padding: 10px;
+  font-weight: bold;
+  width: 100%;
+  font-family: "Krungthep", "Lato", sans-serif;
+}
+
+.acd-content {
+  text-align: center;
+  font-family: "Krungthep", "Lato", sans-serif;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  visibility: hidden;
+}
+
+.acd-content span {
+  font-family: "Krungthep", "Lato", sans-serif;
+}
+
+.acd-check:checked + .acd-label + .acd-content {
+  background-color: #f0f0f0;
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
+
+/*--------------------------------
+Worksセクション
+---------------------------------*/
+.works {
+  margin-left: calc(((100vw - 100%) / 2) * -1);
+  margin-right: calc(((100vw - 100%) / 2) * -1);
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  height: auto;
+  margin-top: 200px;
+}
+
+.works-head {
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.works-card-img1 {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+
+.works-img1 {
+  width: 100%;
+  height: auto;
+}
+
+.works-figcaption {
+  margin-top: 20px;
+}
+
+.works-card-font {
+  font-family: Helvetica, "游ゴシック", "Yu Gothic", YuGothic, HiraKakuProN-W3, "メイリオ", Meiryo, sans-serif;
+  padding: 10px;
+}
+
+/*--------------------------------
+Skillセクション
+---------------------------------*/
+.skill {
+  height: auto;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.skill img {
+  width: 70px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+.skill-head {
+  text-align: center;
+}
+
+.skill-list {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skill-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-bottom: 100px;
+  width: 450px;
+}
+
+.skill-image-wrapper {
+  position: relative;
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skill-item-body {
+  width: 100%;
+}
+
+.skill-item-body p {
+  text-align: left;
+  padding: 0 0 0.5rem 1rem;
+}
+
+.skill-item-title {
+  text-align: left;
+  padding: 0 0 0.5rem 1rem;
+}
+
+.skill-item-rating {
+  text-align: left;
+  padding: 0 0 0.5rem 1rem;
+}
+
+.skill .rate {
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  letter-spacing: 0.3em;
+}
+
+.skill .rate:before,
+.skill .rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 20px;
+  display: inline-block;
+  height: 20px;
+  content: "★★★★★";
+}
+
+.skill .rate:before {
+  color: #f0f0f0;
+}
+
+.skill .rate:after {
+  overflow: hidden;
+  white-space: nowrap;
+  color: #f181b4;
+}
+
+.skill .rate1:after {
+  width: 20px;
+}
+
+.skill .rate2:after {
+  width: 40px;
+}
+
+.skill .rate3:after {
+  width: 60px;
+}
+
+.skill .rate4:after {
+  width: 80px;
+}
+
+.skill .rate5:after {
+  width: 100px;
+}
+
+/*--------------------------------
+Contactセクション
+---------------------------------*/
+.contact img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact-ttlcaption {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.contact-iconBox {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+/*# sourceMappingURL=style.css.map */
