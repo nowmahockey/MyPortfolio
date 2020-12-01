@@ -1,0 +1,41 @@
+//色---------------------------
+$color_1 : #999999;
+$color_2 :#000;
+$color_3 :#fff;
+$color_4: rgb(240, 240, 240);
+$color_5: #f181b4;
+
+
+//文字--------------------------------
+$font_EN : "Krungthep", "Lato", sans-serif;
+$font_JA : Helvetica, "游ゴシック", "Yu Gothic", YuGothic, HiraKakuProN-W3, "メイリオ", Meiryo, sans-serif;
+
+
+/*--------------------------------
+Media Queries
+---------------------------------*/
+$BREACKPOINT_PC: 1280px;
+$BREACKPOINT_TB: 960px;
+$BREACKPOINT_SP: 560px;
+
+// @include max-screen($BREACKPOINT_SP);//SPの表示範囲
+// @include min-screen();
+// @include screen($BREACKPOINT_SP,$BREACKPOINT_PC );//PCの表示範囲
+
+@mixin max-screen($breakPoint) {
+  @media screen and (max-width: $breakPoint) {
+    @content;
+  }
+}
+
+@mixin min-screen($breakPoint) {
+  @media screen and (min-width: $breakPoint) {
+    @content;
+  }
+}
+
+@mixin screen($breakPoint_min, $breakPoint_max) {
+  @media screen and (min-width: $breakPoint_min) and (max-width: $breakPoint_max) {
+    @content;
+  }
+}
