@@ -1,49 +1,24 @@
 @charset "UTF-8";
 @import url(//db.onlinewebfonts.com/c/736cf5b08b01082a3645e14038868e20?family=Krungthep);
-@font-face {font-family: "Krungthep"; src: url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.eot"); src: url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.woff") format("woff"), url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.svg#Krungthep") format("svg"); }
+@font-face {
+  font-family: "Krungthep";
+  src: url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.eot");
+  src: url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.woff") format("woff"), url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.svg#Krungthep") format("svg");
+}
 
 /*--------------------------------
 Media Queries
 ---------------------------------*/
 body {
   overflow-x: hidden;
-}
-
-.pagetop {
-  position: fixed;
-  bottom: 30px;
-  right: 15px;
-}
-
-.pagetop a {
-  display: block;
-  background-color: #ccc;
-  text-align: center;
-  color: #222;
-  font-size: 12px;
-  text-decoration: none;
-  padding: 5px 10px;
-  filter: alpha(opacity=50);
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-}
-
-.pagetop a:hover {
-  display: block;
-  background-color: #b2d1fb;
-  text-align: center;
-  color: #fff;
-  font-size: 12px;
-  text-decoration: none;
-  padding: 5px 10px;
-  filter: alpha(opacity=50);
-  -moz-opacity: 0.5;
-  opacity: 0.5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Krungthep", "Lato", sans-serif;
 }
 
 /*--------------------------------
-fontstyle
----------------------------------*/
+  fontstyle
+  ---------------------------------*/
 .sec-ttl {
   font-family: "Krungthep", "Lato", sans-serif;
   font-size: 3rem;
@@ -60,8 +35,8 @@ fontstyle
 }
 
 /*----------------------------
-box
----------------------------------*/
+  box
+  ---------------------------------*/
 .container {
   position: relative;
   width: 100%;
@@ -81,33 +56,113 @@ box
 }
 
 /*--------------------------------
-gnav
----------------------------------*/
-.gnav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  width: 100%;
+  gnav
+  ---------------------------------*/
+@media (min-width: 900px) {
+  .gnav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .gnav-list li {
+    font-family: "Krungthep", "Lato", sans-serif;
+    font-weight: bold;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    text-align: center;
+    padding: 10px;
+  }
+  .gnav-list li:hover {
+    font-weight: bolder;
+  }
 }
 
-.gnav-list li {
-  font-family: "Krungthep", "Lato", sans-serif;
-  font-weight: bold;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  text-align: center;
-  padding: 10px;
-}
-
-.gnav-list li:hover {
-  font-weight: bolder;
+@media (max-width: 899px) {
+  #wrapper nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    background: #333;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 2;
+  }
+  #wrapper nav ul li {
+    display: block;
+    padding: 20px 28px;
+  }
+  #wrapper nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+  }
+  #wrapper .btn-gnavi {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 3;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  #wrapper .btn-gnavi span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #666;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  #wrapper .btn-gnavi span:nth-child(1) {
+    top: 0;
+  }
+  #wrapper .btn-gnavi span:nth-child(2) {
+    top: 10px;
+  }
+  #wrapper .btn-gnavi span:nth-child(3) {
+    top: 20px;
+  }
+  #wrapper .btn-gnavi.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  #wrapper .btn-gnavi.open span {
+    background: #fff;
+  }
+  #wrapper .btn-gnavi.open span {
+    width: 24px;
+  }
+  #wrapper .contents section p {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    line-height: 1.4;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 6px #666;
+  }
+  #wrapper .contents section:nth-child(odd) p {
+    left: 10%;
+  }
+  #wrapper .contents section:nth-child(even) p {
+    right: 10%;
+  }
 }
 
 /*--------------------------------
-メインビジュアル 
----------------------------------*/
+  メインビジュアル
+  ---------------------------------*/
 .mainVisual {
   position: relative;
   width: 100%;
@@ -117,27 +172,37 @@ gnav
 }
 
 /*--------------------------------
-logo
----------------------------------*/
-.Logo-primary {
-  font-family: "Krungthep", "Lato", sans-serif;
-  font-size: 4rem;
-  margin: 0 auto;
-  text-align: center;
+  logo
+  ---------------------------------*/
+@media (max-width: 899px) {
+  .Logo-primary {
+    font-family: "Krungthep", "Lato", sans-serif;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (min-width: 900px) {
+  .Logo-primary {
+    font-size: 4rem;
+    text-align: center;
+  }
 }
 
 .Logo-sub {
   font-family: "Krungthep", "Lato", sans-serif;
-  margin: 0 auto;
-  width: 20rem;
+  margin: auto;
   text-align: center;
   letter-spacing: 10px;
   font-weight: bold;
 }
 
 /*--------------------------------
-Aboutセクション
----------------------------------*/
+  Aboutセクション
+  ---------------------------------*/
 .about {
   height: auto;
   margin: 0 auto;
@@ -146,42 +211,90 @@ Aboutセクション
 
 .about-head {
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
-.about-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  padding-bottom: 50px;
+@media (max-width: 899px) {
+  .about-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+  }
 }
 
-.about img {
-  width: 60%;
-  height: 60%;
+@media (min-width: 900px) {
+  .about-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 899px) {
+  .about-img1 {
+    width: auto;
+    height: 180px;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-img1 {
+    width: auto;
+    height: 300px;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 899px) {
+  .about-img2 {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-img2 {
+    width: 50%;
+    height: auto;
+  }
 }
 
 .about-table {
-  width: 35%;
+  width: 100%;
   height: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 899px) {
+  .about-table-item {
+    height: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-table-item {
+    height: 50px;
+  }
 }
 
 .about-table-head {
-  padding-top: 20px;
-  text-align: center;
-  width: 15%;
+  text-align: right;
 }
 
 .about-table-body {
-  padding-top: 20px;
   text-align: center;
 }
 
@@ -232,8 +345,8 @@ Aboutセクション
 }
 
 /*--------------------------------
-Worksセクション
----------------------------------*/
+  Worksセクション
+  ---------------------------------*/
 .works {
   margin-left: calc(((100vw - 100%) / 2) * -1);
   margin-right: calc(((100vw - 100%) / 2) * -1);
@@ -270,62 +383,98 @@ Worksセクション
 }
 
 /*--------------------------------
-Skillセクション
----------------------------------*/
+  Skillセクション
+  ---------------------------------*/
 .skill {
   height: auto;
   margin: 0 auto;
   padding-top: 150px;
 }
 
-.skill img {
-  width: 70px;
-  height: 75px;
-  position: absolute;
-  top: 0;
-  left: 30%;
+@media (max-width: 899px) {
+  .skill img {
+    width: 70px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    left: 20%;
+  }
+}
+
+@media (min-width: 900px) {
+  .skill img {
+    width: 70px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
 }
 
 .skill-head {
   text-align: center;
 }
 
-.skill-list {
-  margin-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media (max-width: 899px) {
+  .skill-list {
+    margin-top: 100px;
+  }
 }
 
-.skill-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  width: 100%;
+@media (min-width: 900px) {
+  .skill-list {
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
-.skill-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-bottom: 100px;
-  width: 450px;
+@media (max-width: 899px) {
+  .skill-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 900px) {
+  .skill-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 899px) {
+  .skill-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .skill-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 450px;
+    margin-top: 30px;
+  }
 }
 
 .skill-image-wrapper {
   position: relative;
-  width: 50%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 65%;
 }
 
 .skill-item-body {
@@ -398,8 +547,12 @@ Skillセクション
 }
 
 /*--------------------------------
-Contactセクション
----------------------------------*/
+  Contactセクション
+  ---------------------------------*/
+.contact {
+  margin-top: 100px;
+}
+
 .contact img {
   width: 60px;
   height: 60px;
@@ -419,5 +572,51 @@ Contactセクション
   margin: 0 auto;
   text-align: center;
   padding: 30px;
+}
+
+#pagetop {
+  height: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  visibility: hidden;
+}
+
+#pagetop.fixed {
+  height: auto;
+  opacity: .7;
+  visibility: visible;
+}
+
+.pagetop {
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+}
+
+.pagetop a {
+  display: block;
+  background-color: #ccc;
+  text-align: center;
+  color: #222;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 20px 20px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.pagetop a:hover {
+  display: block;
+  background-color: #b2d1fb;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */
