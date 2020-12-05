@@ -9,24 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/736cf5b08b01082a3645e14038868e20?family=Krungthep" rel="stylesheet" type="text/css"/>
     <title>Kon Masataka Portfolio</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
-
     <header class="header container" id="header">
       <div class="inner">
-
         <!-- ここからグローバルナビ -->
-        <nav class="gnav"id="gNav">
-          <ul class="gnav-list">
-            <li><a href="#header" class="subNavBtn">Top</a></li>
-            <li><a href="#s1"  class="subNavBtn">About</a></li>
-            <li><a href="#s2"  class="subNavBtn">Works</a></li>
-            <li><a href="#s3"  class="subNavBtn">Skill</a></li>
-            <li><a href="#s4"  class="subNavBtn">Contact</a></li>
-          </ul>
-        </nav>
+        <div id="wrapper">
+          <p class="btn-gnavi">
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+          <nav class="gnav" id="global-navi">
+            <ul class="gnav-list menu">
+              <li><a href="#header" class="subNavBtn">Top</a></li>
+              <li><a href="#s1"  class="subNavBtn">About</a></li>
+              <li><a href="#s2"  class="subNavBtn">Works</a></li>
+              <li><a href="#s3"  class="subNavBtn">Skill</a></li>
+              <li><a href="#s4"  class="subNavBtn">Contact</a></li>
+            </ul>
+          </nav>
+        </div>  
       </div>
     </header>
 
@@ -59,30 +64,30 @@
                 <th class="about-table-head">出身</th><td class="about-table-body">北海道 苫小牧市</td>
               </tr>
               <!--年齢-->
-                <tr class="about-table-item">
-                  <th class="about-table-head">年齢</th><td class="about-table-body">26歳</td>
-                </tr>
-                <!--学歴-->
-                <tr class="about-table-item">
-                  <th class="about-table-head">学歴</th><td class="about-table-body">法政大学 法学部政治学科 卒業</td>
-                </tr>
-                <!--職歴-->
-                <tr class="about-table-item ">
-                  <th class="about-table-head">職歴</th>
-                  <td class="about-table-body">ネッツトヨタ苫小牧株式会社</td>
-                </tr>
-                <tr class="about-table-item">
-                  <th class="about-table-head"></th>
-                  <td class="about-table-body about-pad-20">車両グループ 営業スタッフ<br>3年2ヶ月</td>
-                </tr>
-                <tr class="about-table-item">
-                  <th class="about-table-head"></th>
-                  <td class="about-table-body about-pad-10">経営企画部 営業企画グループ<br>5ヶ月</td>
-                </tr>
-                <tr class="about-table-item">
-                  <th class="about-table-head"></th>
-                  <td class="about-table-body about-pad-10">経営企画部 経理グループ<br>1ヶ月</td>
-                </tr>
+              <tr class="about-table-item">
+                <th class="about-table-head">年齢</th><td class="about-table-body">26歳</td>
+              </tr>
+              <!--学歴-->
+              <tr class="about-table-item">
+                <th class="about-table-head">学歴</th><td class="about-table-body">法政大学 法学部政治学科 卒業</td>
+              </tr>
+              <!--職歴-->
+              <tr class="about-table-item ">
+                <th class="about-table-head">職歴</th>
+                <td class="about-table-body">ネッツトヨタ苫小牧株式会社</td>
+              </tr>
+              <tr class="about-table-item">
+                <th class="about-table-head"></th>
+                <td class="about-table-body about-pad-20">車両グループ 営業スタッフ<br>3年2ヶ月</td>
+              </tr>
+              <tr class="about-table-item">
+                <th class="about-table-head"></th>
+                <td class="about-table-body about-pad-10">経営企画部 営業企画グループ<br>5ヶ月</td>
+              </tr>
+              <tr class="about-table-item">
+                <th class="about-table-head"></th>
+                <td class="about-table-body about-pad-10">経営企画部 経理グループ<br>1ヶ月</td>
+              </tr>
             </table>
           </div>
 
@@ -146,7 +151,7 @@
             <figcaption class="works-figcaption">
               <div class="works-card-font"><p>MENTA / 模写課題</p></div>
               <div class="works-card-font"><p>coding</p></div>
-              <div class="works-card-font"><p><a href="#">LINK</a></p></div>
+              <div class="works-card-font"><p><a href="ぺ">LINK</a></p></div>
             </figcaption>
           </figure>
         </div>
@@ -154,7 +159,6 @@
 
       <!-- ここからスキルセクション -->
       <section class="skill container "id="s3">
-        <div class="inner">
           <h2 class="skill-head sec-ttl">Skill</h2>
           <p class="section-lead"><!-- コメント --></p>
           <div class="skill-list">
@@ -248,12 +252,11 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       <!-- ここからコンタクトセクション  -->
       <section class="contact container"id="s4">
-        <div class="contact inner">
+        <div class="inner">
           <h2 class="sec-ttl">Contact</h2>
         </div>
         <p class="contact-ttlcaption">お問合せはメールかSNSにてお気軽にどうぞ！</p>
@@ -271,50 +274,10 @@
         <p></p>
       </div>
     </footer>
+    
+    <div id="pagetop" class="pagetop totop1"><a href="#bnp_top" aria-label="To Top">▲<br>top</a></div>
+    
     <script src="./JS/index.js"></script>
-    <script src="./JS/jquery-3.5.1.min.js"></script>
-    <script  src="../JS/jquery.smint.js"></script>
-    <script>//セクションへ自動スクロール
-      $(document).ready( function() {
-          $('#gNavi').smint({
-            'scrollSpeed' : 1000
-          });
-      });
-    </script>
-
-    <script>//topへ戻る
-      $(document).ready(function() {
-        var pagetop = $('.pagetop');
-          $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-                  pagetop.fadeIn();
-                } else {
-                  pagetop.fadeOut();
-                  }
-      });
-      $().click(function(){
-    $("html,body").animate({
-        scrollTop : position
-    }, {
-        queue : false
-    });
-  });
-
-      </script>
-      <script>
-            $(function () {
-          setTimeout('Logo()'); //アニメーションを実行
-      });
-      function rect() {
-          $('#Logo').animate({
-              marginTop: '-=10px'
-          }, 800).animate({
-              marginTop: '+=10px'
-          }, 800);
-          setTimeout('Logo()', 1600); //アニメーションを繰り返す間隔
-      }
-      </script>
-    <p class="pagetop"><a href="#header">▲top</a></p>
   </body>
 
 </html>
