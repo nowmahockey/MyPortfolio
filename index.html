@@ -274,9 +274,27 @@
         <p></p>
       </div>
     </footer>
-    
+        
+    <!-- TOPに戻るボタン -->
     <div id="pagetop" class="pagetop totop1"><a href="#bnp_top" aria-label="To Top">▲<br>top</a></div>
-    
+        
+    <!-- ハンバーガーメニュー -->
+    <script>
+    $(function(){
+      $(".btn-gnavi").on("click", function(){
+        var rightVal = 0;
+        if($(this).hasClass("open")) {
+          rightVal = -300;
+          $(this).removeClass("open");
+        } else {
+          $(this).addClass("open");
+        }
+        $("#global-navi").stop().animate({
+          right: rightVal
+        }, 200);
+      });
+    });
+    </script>
     <script src="./JS/index.js"></script>
   </body>
 
