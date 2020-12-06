@@ -465,7 +465,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 450px;
-    margin-top: 30px;
+    margin: 30px auto;
   }
 }
 
