@@ -1,9 +1,9 @@
 @charset "UTF-8";
-@import url(//db.onlinewebfonts.com/c/736cf5b08b01082a3645e14038868e20?family=Krungthep);
 @font-face {
-  font-family: "Krungthep";
-  src: url("//db.onlinewebfonts.com/t/736cf5b08b01082a3645e14038868e20.woff") format("woff");
+  font-family: "Chicago";
+  src: url("Chicago_Bold.woff") format("woff");
 }
+
 /*--------------------------------
 Media Queries
 ---------------------------------*/
@@ -11,14 +11,14 @@ body {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Krungthep", "Lato", sans-serif;
+  font-family: "Chicago", "Lato", sans-serif;
 }
 
 /*--------------------------------
   fontstyle
   ---------------------------------*/
 .sec-ttl {
-  font-family: "Krungthep", "Lato", sans-serif;
+  font-family: "Chicago", "Lato", sans-serif;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -65,7 +65,7 @@ body {
     width: 100%;
   }
   .gnav-list li {
-    font-family: "Krungthep", "Lato", sans-serif;
+    font-family: "Chicago", "Lato", sans-serif;
     font-weight: bold;
     -webkit-box-flex: 1;
         -ms-flex: auto;
@@ -174,7 +174,7 @@ body {
   ---------------------------------*/
 @media (max-width: 899px) {
   .Logo-primary {
-    font-family: "Krungthep", "Lato", sans-serif;
+    font-family: "Chicago", "Lato", sans-serif;
     font-size: 2.5rem;
     margin: 0 auto;
     text-align: center;
@@ -191,7 +191,7 @@ body {
 }
 
 .Logo-sub {
-  font-family: "Krungthep", "Lato", sans-serif;
+  font-family: "Chicago", "Lato", sans-serif;
   margin: auto;
   text-align: center;
   letter-spacing: 10px;
@@ -316,12 +316,12 @@ body {
   padding: 10px;
   font-weight: bold;
   width: 100%;
-  font-family: "Krungthep", "Lato", sans-serif;
+  font-family: "Chicago", "Lato", sans-serif;
 }
 
 .acd-content {
   text-align: center;
-  font-family: "Krungthep", "Lato", sans-serif;
+  font-family: "Chicago", "Lato", sans-serif;
   height: 0;
   opacity: 0;
   padding: 0 10px;
@@ -331,7 +331,7 @@ body {
 }
 
 .acd-content span {
-  font-family: "Krungthep", "Lato", sans-serif;
+  font-family: "Chicago", "Lato", sans-serif;
 }
 
 .acd-check:checked + .acd-label + .acd-content {
@@ -599,7 +599,7 @@ body {
   color: #222;
   font-size: 12px;
   text-decoration: none;
-  padding: 20px 20px;
+  padding: 5px 10px;
   filter: alpha(opacity=50);
   -moz-opacity: 0.5;
   opacity: 0.5;
