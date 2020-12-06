@@ -1,0 +1,618 @@
+@import "variable";
+
+
+  body {
+    overflow-x: hidden;
+    box-sizing : border-box;
+    font-family: $font_EN;
+  }
+
+  
+  /*--------------------------------
+  fontstyle
+  ---------------------------------*/
+
+  .sec {
+
+    &-ttl {
+      font-family: $font_EN;
+      font-size: 3rem;
+      font-weight: bold;
+
+    }
+
+    &-body {
+      font-family: $font_JA;
+    }
+
+  }
+
+  .card-ttl {
+    font-family: $font_JA;
+    padding-top: 10px;
+  }
+
+  /*----------------------------
+  box
+  ---------------------------------*/
+  .container{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .section {
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+
+  .inner {
+      margin: 0 auto;
+      width: 78%;
+  }
+
+  /*--------------------------------
+  gnav
+  ---------------------------------*/
+  
+  @include pc{
+
+    .gnav {
+
+    &-list {
+      display: flex;;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &-list li {
+      font-family: $font_EN;
+      font-weight: bold;
+      flex: auto;
+      text-align: center;
+      padding: 10px;
+    }
+    &-list li:hover{
+      font-weight: bolder;
+    }
+  }
+}
+
+  
+  
+  @include sp{ //スマホでの画面表示
+    #wrapper{
+
+      & nav {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        padding-top: 50px;
+        background:#333;
+        font-size: 16px;
+        box-sizing: border-box;
+        z-index: 2
+      } 
+
+      & nav ul li {
+        display:block;
+        padding: 20px 28px
+      }
+
+      & nav ul li a {
+        text-decoration: none;
+        color: #ddd
+      }
+
+      & .btn-gnavi {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 24px;
+        z-index: 3;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+      }
+
+      & .btn-gnavi span {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #666;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+      }
+
+      & .btn-gnavi span:nth-child(1) {
+        top: 0
+      }
+
+      & .btn-gnavi span:nth-child(2) {
+        top: 10px
+      }
+
+      & .btn-gnavi span:nth-child(3) {
+        top: 20px
+      }
+
+      & .btn-gnavi.open {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+      }
+
+      & .btn-gnavi.open span {
+        background: #fff
+      }
+
+      & .btn-gnavi.open span {
+        width: 24px;
+      }
+
+      & .contents section p {
+        position: absolute;
+        top: 50%;
+        width: 30%;
+        line-height: 1.4;
+        font-size: 20px;
+        color: #fff;
+        text-shadow: 0 0 6px #666
+      }
+
+      & .contents section:nth-child(odd) p {
+        left: 10%
+      }
+
+      & .contents section:nth-child(even) p {
+        right: 10%
+      }
+    } 
+  }
+    
+
+
+
+  /*--------------------------------
+  メインビジュアル
+  ---------------------------------*/
+  .mainVisual {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 270px;
+    padding-bottom: 270px;
+  }
+
+  /*--------------------------------
+  logo
+  ---------------------------------*/
+  .Logo {
+  
+    &-primary {
+      @include sp{
+        font-family: $font_EN;
+        font-size: 2.5rem;
+        margin: 0 auto;
+        text-align: center;
+        box-sizing : border-box;
+      } 
+      @include pc{
+        font-size: 4rem;
+        text-align: center;
+      }
+    }
+
+    &-sub {
+      font-family: $font_EN;
+      margin: auto;
+      // width: 20rem;
+      text-align: center;
+      letter-spacing: 10px;
+      font-weight: bold;
+      
+    }
+
+  }
+  /*--------------------------------
+  Aboutセクション
+  ---------------------------------*/
+  .about {
+
+    height: auto;
+    margin: 0 auto;
+    padding-top: 70px;
+
+    &-head {
+      padding-top: 30px;
+      padding-bottom: 80px;
+      text-align: center;
+    }
+
+    &-wrap {
+      @include sp{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 50px;
+      }
+      
+      @include pc{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &-img1 {
+      @include sp{
+        width: auto;
+        height: 180px;
+      }
+      @include pc{
+        width: auto;
+        height: 300px;
+        vertical-align: middle;
+      }
+      
+    }
+    &-img2 {
+      @include sp{
+        width: 80%;
+        height: auto;
+      }
+      @include pc{
+        width: 50%;
+        height: auto;
+      }
+    }
+
+
+    &-table {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      
+    }
+
+    &-table-item {
+      @include sp{
+        height: 30px;
+      }
+      @include pc{
+        height: 50px;
+      }
+      
+    }
+
+    &-table-head {
+      text-align: right;
+    }
+
+    &-table-body {
+      text-align: center;
+    }
+
+    &-btn-box {
+      height: 100px;
+      position: relative;
+      padding-top: 50px;
+    }
+
+
+  }
+  // アコーディオン
+  .acd{
+
+    &-check{
+    display: none;
+    }
+    &-label{
+      border: solid 2px $color_2;
+      text-align: center;
+      color: $color_2;
+      background: $color_3;
+      display: block;
+      margin: 10px auto 1px auto;
+      padding: 10px;
+      font-weight: bold;
+      width: 100%;
+      font-family: $font_EN;
+    }
+    &-content{
+      text-align: center;
+      font-family: $font_EN;
+      height: 0;
+      opacity: 0;
+      padding: 0 10px;
+      transition: .5s;
+      visibility: hidden;
+      span {
+        font-family: $font_EN;
+      }
+
+    }
+
+    &-check:checked + .acd-label + .acd-content{
+      background-color: $color_4;
+      height: auto;
+      opacity: 1;
+      padding: 10px;
+      visibility: visible;
+
+    }
+
+  }
+
+  /*--------------------------------
+  Worksセクション
+  ---------------------------------*/
+  .works {
+    margin-left: calc(((100vw - 100%) / 2) * -1);
+    margin-right: calc(((100vw - 100%) / 2) * -1);
+    color: $color_3;
+    background-color: $color_2;
+    text-align: center;
+    height: auto;
+    margin-top: 200px;
+
+    &-head {
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    &-card-img1 {
+      width: 100%;
+      height: auto;
+      padding: 40px;
+    }
+
+    &-img1 {
+      width: 100%;
+      height: auto;
+    }
+
+    &-figcaption {
+      margin-top: 20px;
+    }
+
+    &-card-font {
+      font-family: $font_JA;
+      padding: 10px;
+    }
+
+  }
+
+
+
+
+
+
+
+  /*--------------------------------
+  Skillセクション
+  ---------------------------------*/
+  .skill {
+
+    height: auto;
+    margin: 0 auto;
+    padding-top: 150px;
+
+    & img {
+      @include sp{
+        width: 70px;
+        height: 75px;
+        position: absolute;
+        top:0;
+        left:20%
+      }
+      @include pc{
+        width: 70px;
+        height: 75px;
+        position: absolute;
+        top:0;
+        left:30%
+      }
+    }
+
+    &-head {
+      text-align: center;
+    }
+
+    &-list {
+      @include sp{
+        margin-top: 100px;
+        // display: flex;
+      }
+
+      @include pc{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+    }
+
+    &-group {
+      @include sp{
+        margin: 0 auto;
+        flex-direction: column;
+
+      }
+      @include pc{
+      display: flex;
+      margin: 0 auto;
+      width: 100%;
+      }
+    }
+
+    &-item {
+      @include sp{
+        display: flex;
+        margin-top: 30px;
+      }
+      @include pc{
+        display: flex;
+        width: 450px;
+        margin: 30px auto;
+      }
+      
+      
+    }
+    &-image-wrapper {
+      position: relative;
+      width: 65%;
+    }
+
+    &-item-body {
+      width: 100%;
+      p {
+        text-align: left;
+        padding: 0 0 0.5rem 1rem;
+      }
+    }
+
+    &-item-title {
+      text-align: left;
+      padding: 0 0 0.5rem 1rem;
+    }
+
+    &-item-rating {
+      text-align: left;
+      padding: 0 0 0.5rem 1rem;
+    }
+
+    & .rate {
+      position: relative;
+      font-size: 16px;
+      display: inline-block;
+      width: 100%;
+      height: 20px;
+      letter-spacing: 0.3em;
+    }
+
+    & .rate:before,
+    & .rate:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 20px;
+      display: inline-block;
+      height: 20px;
+      content: "★★★★★";
+    }
+
+    & .rate:before {
+      color: $color_4;
+    }
+
+    & .rate:after {
+      overflow: hidden;
+      white-space: nowrap;
+      color: $color_5;
+    }
+
+    & .rate1:after {
+      width: 20px;
+    }
+
+    & .rate2:after {
+      width: 40px;
+    }
+
+    & .rate3:after {
+      width: 60px;
+    }
+
+    & .rate4:after {
+      width: 80px;
+    }
+
+    & .rate5:after {
+      width: 100px;
+    }
+
+  }
+
+
+  /*--------------------------------
+  Contactセクション
+  ---------------------------------*/
+  .contact{
+
+    margin-top: 100px;
+
+    & img {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    & h2 {
+      text-align: center;
+    }
+
+    &-ttlcaption{
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    &-iconBox {
+      margin: 0 auto;
+      text-align: center;
+      padding: 30px;
+    }
+  }
+
+
+#pagetop {
+  
+	height:0;
+	opacity:0;
+	transition: 0.3s;
+  visibility:hidden;
+  
+  &.fixed{
+    height:auto;
+    opacity:.7;
+    visibility:visible;
+  }
+}
+.pagetop {
+
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+
+  & a {
+    display: block;
+    background-color: #ccc;
+    text-align: center;
+    color: #222;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+  }
+
+  & a:hover {
+    display: block;
+    background-color: #b2d1fb;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding:5px 10px;
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+  }
+}

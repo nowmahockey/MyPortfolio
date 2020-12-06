@@ -1,0 +1,45 @@
+//色---------------------------
+$color_1 : #999999;
+$color_2 :#000;
+$color_3 :#fff;
+$color_4: rgb(240, 240, 240);
+$color_5: #f181b4;
+
+
+//文字--------------------------------
+@font-face {font-family: "Chicago"; src: url("Chicago_Bold.woff") format("woff");}
+
+
+
+  $font_EN : "Chicago", "Lato", sans-serif;
+  $font_JA: Helvetica, "游ゴシック", "Yu Gothic", YuGothic, HiraKakuProN-W3, "メイリオ", Meiryo, sans-serif;
+
+  
+  /*--------------------------------
+Media Queries
+---------------------------------*/
+$sp: 899px; // スマホ用のブレイクポイント
+$pc: 900px; // パソコン用のブレイクポイント
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+      @content;
+  }
+}
+@mixin pc {
+  @media (min-width: ($pc)) {
+      @content;
+  }
+}
+
+//@include sp
+//@include pc
+
+// 呼び出し
+// .top-image {
+//   width: 80%;
+
+//   @include sp {
+//       width: 100%;
+//   }
+// }
