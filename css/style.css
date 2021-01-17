@@ -354,7 +354,7 @@ body {
 }
 
 .acd-content span {
-  font-family: "krungthep", "Chicago", "Lato",'Artifika',sans-serif, serif;
+  font-family: 'Artifika',"krungthep", "Chicago", "Lato",sans-serif, serif;
 }
 
 .acd-check:checked + .acd-label + .acd-content {
