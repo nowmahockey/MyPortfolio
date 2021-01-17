@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*--------------------------------
+Media Queries
+---------------------------------*/
+@font-face {
+  font-family: "Chicago";
+  src: url("Chicago_Bold.woff") format("woff");
+}
+
+.sec {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 78%;
+  height: auto;
+}
+
+.mttl {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media (max-width: 899px) {
+  .mttl {
+    font-size: 2rem;
+  }
+}
+
+.atc {
+  font-family: Helvetica, "游ゴシック", "Yu Gothic", YuGothic, HiraKakuProN-W3, "メイリオ", Meiryo, sans-serif;
+}
+/*# sourceMappingURL=variable.css.map */
