@@ -160,7 +160,7 @@ body {
 }
 
 .console-container {
-  font-family: "krungthep", "Chicago", "Lato",'Artifika',sans-serif, serif;
+  font-family: 'Artifika',"krungthep", "Chicago", "Lato",sans-serif, serif;
   font-size: 4em;
   text-align: center;
   height: 200px;
