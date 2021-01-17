@@ -41,7 +41,7 @@ body {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "'Artifika', serif;
+  font-family: 'Artifika', serif;
 }
 
 /*--------------------------------
@@ -160,7 +160,7 @@ body {
 }
 
 .console-container {
-  font-family: "krungthep", "Chicago", "Lato", sans-serif;
+  font-family: "krungthep", "Chicago", "Lato",'Artifika',sans-serif, serif;
   font-size: 4em;
   text-align: center;
   height: 200px;
@@ -339,12 +339,12 @@ body {
   padding: 10px;
   font-weight: bold;
   width: 100%;
-  font-family: "krungthep", "Chicago", "Lato", sans-serif;
+  font-family: "krungthep", "Chicago", "Lato",'Artifika',sans-serif, serif;
 }
 
 .acd-content {
   text-align: center;
-  font-family: "krungthep", "Chicago", "Lato", sans-serif;
+  font-family:"krungthep", "Chicago", "Lato",'Artifika',sans-serif, serif;
   height: 0;
   opacity: 0;
   padding: 0 10px;
@@ -354,7 +354,7 @@ body {
 }
 
 .acd-content span {
-  font-family: "krungthep", "Chicago", "Lato", sans-serif;
+  font-family: "krungthep", "Chicago", "Lato",'Artifika',sans-serif, serif;
 }
 
 .acd-check:checked + .acd-label + .acd-content {
