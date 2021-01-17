@@ -1,283 +1,332 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="email=no,telephone=no,address=no" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
-    <title>Kon Masataka Portfolio</title>
-  </head>
-
-  <body>
-    <header class="header container" id="header">
-      <div class="inner">
-        <!-- ここからグローバルナビ -->
-        <div id="wrapper">
-          <p class="btn-gnavi">
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
-          <nav class="gnav" id="global-navi">
-            <ul class="gnav-list menu">
-              <li><a href="#header" class="subNavBtn">Top</a></li>
-              <li><a href="#s1"  class="subNavBtn">About</a></li>
-              <li><a href="#s2"  class="subNavBtn">Works</a></li>
-              <li><a href="#s3"  class="subNavBtn">Skill</a></li>
-              <li><a href="#s4"  class="subNavBtn">Contact</a></li>
-            </ul>
-          </nav>
-        </div>  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>My Portforio</title>
+</head>
+<body>
+  <header class="header container" id="header">
+    <div class="inner">
+      <!-- ここからグローバルナビ -->
+      <div id="wrapper">
+        <p class="btn-gnavi">
+          <span></span>
+          <span></span>
+          <span></span>
+        </p>
+        <nav class="gnav" id="global-navi">
+          <ul class="gnav-list menu">
+            <li><a href="#s1"  class="subNavBtn">About</a></li>
+            <li><a href="#s2"  class="subNavBtn">Works</a></li>
+            <li><a href="#s3"  class="subNavBtn">Skill</a></li>
+            <li><a href="#s4" class="subNavBtn">Gallery</a></li>
+            <li><a href="#s5"  class="subNavBtn">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
-
-
-
-    <main class="main container">
-      <!-- ここからメインビジュアル  -->
-      <div class="mainVisual">
-        <div class="inner">
-          <h1 class="=Logo">
-            <div class="Logo-primary"id="Logo">Kon Masataka</div>
-            <div class="Logo-sub">PORTFOLIO</div>
-          </h1>
+    </div>
+  </header>
+  <main class="main">
+    <!-- MAINVISUAL  -->
+    <div class="mainVisual sec">
+      <div class="container">
+        <div class='console-container'>
+          <span id='text'></span>
+          <div class='console-underscore' id='console'>&#95;</div>
         </div>
       </div>
+    </div>
+    <!-- ABOUT -->
+    <section class="sec" id="s1">
+      <div class="container">
+        <h2 class="about-head mttl">About</h2>
+        <div class="about-wrap">
+          <img class="about-img1" src="./images/About_bg.jpeg" alt="プロフィール画像">
+          <table class="about-table">
+            <!--名前-->
+            <tr class="about-table-item">
+              <th class="about-table-head">名前</th><td class="about-table-body">今 将駿　/　こん まさたか</td>
+            </tr>
+            <!--出身-->
+            <tr class="about-table-item">
+              <th class="about-table-head">出身</th><td class="about-table-body">北海道 苫小牧市</td>
+            </tr>
+            <!--年齢-->
+            <tr class="about-table-item">
+              <th class="about-table-head">年齢</th><td class="about-table-body">26歳</td>
+            </tr>
+            <!--学歴-->
+            <tr class="about-table-item">
+              <th class="about-table-head">学歴</th><td class="about-table-body">法政大学 法学部政治学科 卒業</td>
+            </tr>
+            <!--職歴-->
+            <tr class="about-table-item ">
+              <th class="about-table-head">職歴</th>
+              <td class="about-table-body">ネッツトヨタ苫小牧株式会社</td>
+            </tr>
+            <tr class="about-table-item">
+              <th class="about-table-head"></th>
+              <td class="about-table-body about-pad-20">車両グループ 営業スタッフ<br>3年2ヶ月</td>
+            </tr>
+            <tr class="about-table-item">
+              <th class="about-table-head"></th>
+              <td class="about-table-body about-pad-10">経営企画部 営業企画グループ<br>5ヶ月</td>
+            </tr>
+            <tr class="about-table-item">
+              <th class="about-table-head"></th>
+              <td class="about-table-body about-pad-10">経営企画部 経理グループ<br>1ヶ月</td>
+            </tr>
+          </table>
+        </div>
 
-      <!-- ここからアバウトセクション -->
-      <section class="about container" id="s1">
-        <div class="about-inner inner">
-          <h2 class="about-head sec-ttl">About</h2>
-          <div class="about-wrap">
-            <img class="about-img1" src="./images/About_bg.jpeg" alt="プロフィール画像">
-            <table class="about-table">
-              <!--名前-->
-              <tr class="about-table-item">
-                <th class="about-table-head">名前</th><td class="about-table-body">今 将駿　/　こん まさたか</td>
-              </tr>
-              <!--出身-->
-              <tr class="about-table-item">
-                <th class="about-table-head">出身</th><td class="about-table-body">北海道 苫小牧市</td>
-              </tr>
-              <!--年齢-->
-              <tr class="about-table-item">
-                <th class="about-table-head">年齢</th><td class="about-table-body">26歳</td>
-              </tr>
-              <!--学歴-->
-              <tr class="about-table-item">
-                <th class="about-table-head">学歴</th><td class="about-table-body">法政大学 法学部政治学科 卒業</td>
-              </tr>
-              <!--職歴-->
-              <tr class="about-table-item ">
-                <th class="about-table-head">職歴</th>
-                <td class="about-table-body">ネッツトヨタ苫小牧株式会社</td>
-              </tr>
-              <tr class="about-table-item">
-                <th class="about-table-head"></th>
-                <td class="about-table-body about-pad-20">車両グループ 営業スタッフ<br>3年2ヶ月</td>
-              </tr>
-              <tr class="about-table-item">
-                <th class="about-table-head"></th>
-                <td class="about-table-body about-pad-10">経営企画部 営業企画グループ<br>5ヶ月</td>
-              </tr>
-              <tr class="about-table-item">
-                <th class="about-table-head"></th>
-                <td class="about-table-body about-pad-10">経営企画部 経理グループ<br>1ヶ月</td>
-              </tr>
-            </table>
-          </div>
+    <!-- アコーディオン -->
+        <div class="acd">
+          <input id="acd-check1" class="acd-check" type="checkbox">
+          <label class="acd-label" for="acd-check1">More</label>
+          <div class="acd-content">
 
-      <!-- アコーディオン -->
-          <div class="acd">
-            <input id="acd-check1" class="acd-check" type="checkbox">
-            <label class="acd-label" for="acd-check1">More</label>
+            <h3 class="mttl">+ Parsonal</h3>
+
+            <input id="acd-check2" class="acd-check" type="checkbox">
+            <label class="acd-label" for="acd-check2">Passion</label>
+            <div class="acd-content acd-content--1">
+              <img class="about-img2" src="./images/HOCKEY_2.JPG" alt="HOSEIHOCKEY写真">
+              <p>
+                3歳頃からおよそ20年以上、アイスホッケーをずっと続けてきました。<br>
+                その中で得たものは沢山ありますが、その中でも「チャレンジ精神」、「継続力」、「強靭なメンタル」は<br>
+                社会人になった今こそ実感できる事が多くなりました。<br>
+                常に競争の世界に居たので、自分でも無意識に負けず嫌いなところがあると思います。<br>
+              </p>
+            </div>
+            <input id="acd-check3" class="acd-check" type="checkbox">
+            <label class="acd-label" for="acd-check3">Values</label>
             <div class="acd-content">
-
-              <h3 style="font-size: 2rem;">+ Parsonality</h3>
-
-              <input id="acd-check2" class="acd-check" type="checkbox">
-              <label class="acd-label" for="acd-check2">Passion</label>
-              <div class="acd-content acd-content--1">
-                <img class="about-img2" src="./images/HOCKEY_2.JPG" alt="HOSEIHOCKEY写真">
-                <p>
-                  3歳頃からおよそ20年以上、アイスホッケーをずっと続けてきました。<br>
-                  その中で得たものは沢山ありますが、特に「チャレンジ精神」、「継続力」、「強靭なメンタル」は今でも実感できる事が多いです。<br>
-                  常に競争の世界に居たので、自分でも無意識に負けず嫌いなところがあるかもしれません。<br>
-
-                </p>
-              </div>
-              <input id="acd-check3" class="acd-check" type="checkbox">
-              <label class="acd-label" for="acd-check3">Values</label>
-              <div class="acd-content">
-                <p>
-                  私の仕事のやりがいは、自分の行動によって誰かを喜ばせたり、幸せにできた時です。<br>
-                  私の携わったプロジェクトでWEBサイトやHP、WEBアプリケーションを通して、顧客の目的達成にコミットし、<br>
-                  更にプラスαの提案ができるよう、日々精進していきたいと思っています。
-                  御社に入社した際には、即戦力になれるよう学びの多い毎日を積み重ねていきたいと思います。
-                </p>
-              </div>
-              <input id="acd-check4" class="acd-check" type="checkbox">
-              <label class="acd-label" for="acd-check4">Interest</label>
-              <div class="acd-content">
-                <p>
-                  現在、プログラミングを独学で勉強中ですが、学ぶべき事が多すぎて「まずは形にする」を目標としています。<br>
-                  特に、実績にこだわり顧客の売り上げアップや集客アップに繋がるような、マーケティング観点からみたWEBサイトについて知識を深めていきたいと考えています。<br>
-                  個人的にはフロントエンドの技術に特化し、マーケティング分野やデザインの分野でもマルチに活躍したいという目標もある中で、<br>
-                  今はJSやマークアップ言語を中心に勉強しています。
-                </p>
-              </div>
-              <input id="acd-check5" class="acd-check" type="checkbox">
-              <label class="acd-label" for="acd-check5">More,More!!</label>
-              <div class="acd-content">
-                <p>
-                  <a href="https://mk-portfolio.com/">もっと知りたい人は<span>nowBLOG</span>へ!</a>
-                </p>
-              </div>
+              <p>
+                私の仕事のやりがいは、自分の作ったもので誰かを喜ばせたり、幸せにできた時です。<br>
+                関わるプロジェクトではWEBサイトやHP、WEBアプリケーションを通して、顧客の目的達成にコミットし、<br>
+                更にプラスαの提案ができるよう、日々精進していきたいと思っています。<br>
+                御社に入社した際には、早く戦力になれるよう学びの多い毎日を積み重ねていきたいと思います。
+              </p>
+            </div>
+            <input id="acd-check4" class="acd-check" type="checkbox">
+            <label class="acd-label" for="acd-check4">Interest</label>
+            <div class="acd-content">
+              <p>
+                現在、WEB制作を独学で勉強中です！学ぶべき事が多すぎますが、一歩ずつまずは実務経験を積むことを目標としています。<br>
+                クライアントの売り上げアップや集客アップなどの、「目的を達成するWEBサイト」について知識を深めていきたいと考えています。<br>
+                将来的なキャリアとして、フロントエンドの技術に特化し、アクセス解析やリサーチ、コンテンツ制作などのWEBマーケティング分野からデザインの分野でもマルチに活躍したいという野望があります。現在はJSやマークアップ言語を中心に勉強しています。
+              </p>
+            </div>
+            <input id="acd-check5" class="acd-check" type="checkbox">
+            <label class="acd-label" for="acd-check5">More and more</label>
+            <div class="acd-content">
+              <p>
+                <a href="https://mk-portfolio.com/">もっと知りたい人は<span>こちら</span></a>
+              </p>
             </div>
           </div>
-
-      <!-- ここからワークスセクション -->
-      <section class="works"id="s2">
-        <div class="inner">
-          <h2 class="works-head sec-ttl">Works</h2>
-          <figure class="works-card-img1">
-            <a class="works-card-link">
-              <img class="works-img1"src="./images/works-item1.png" alt="">
-            </a>
-            <figcaption class="works-figcaption">
-              <div class="works-card-font"><p>MENTA / 模写課題</p></div>
-              <div class="works-card-font"><p>coding</p></div>
-              <div class="works-card-font"><p><a href="ぺ">LINK</a></p></div>
-            </figcaption>
-          </figure>
         </div>
-      </section>
-
-      <!-- ここからスキルセクション -->
-      <section class="skill container "id="s3">
-          <h2 class="skill-head sec-ttl">Skill</h2>
-          <p class="section-lead"><!-- コメント --></p>
-          <div class="skill-list">
-            <div class="skill-group">
-              <!-- ここからHTMLカード -->
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="./images/html.png" alt="HTMLロゴ">
-                </div>
-                <div class="skill-item-body">
-                  <h3 class="skill-item-title">HTML5</h3>
-                  <div class="skill-item-rating rating">
-                    <div class="rate rate4">
-                    </div>
-                  </div>
-                  <p>セマンティックなHTMLを意識してのマークアップを心掛けております。依存性が少なく、メンテナンス性の高いコーディングができるように勉強中です。</p>
-                </div>
-              </div>
-
-              <!-- ここからCSSカード -->
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="./images/css.png" alt="CSSロゴ">
-                </div>
-                <div class="skill-item-body">
-                  <h3 class="skill-item-title">CSS3</h3>
-                  <div class="skill-item-rating rating">
-                    <div class="rate rate3"></div>
-                  </div>
-                  <p>HTMLに対しての基本的なスタイルの指定ができます。また、レスポンシブデザインでの実装やBOXレイアウトでの実装ができます。</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-group">
-              <!-- ここからSCSSカード -->
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="./images/Sass_icon.png" alt="SASSロゴ">
-                </div>
-                <div class="skill-item-body">
-                  <h3 class="skill-item-title">SCSS</h3>
-                  <div class="skill-item-rating rating">
-                    <div class="rate rate2"></div>
-                  </div>
-                  <p>CSSを勉強した後、SCSSでの基本的な書き方も勉強しました。変数や関数等も使ってよりメンテナンス性の高いコーディングができるよう勉強中です。</p>
-                </div>
-              </div>
-
-              <!-- ここからJavaScriptカード -->
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="./images/JavaScript.png" alt="JSロゴ">
-                </div>
-                <div class="skill-item-body">
-                  <h3 class="skill-item-title">JavaScript</h3>
-                  <div class="skill-item-rating rating">
-                    <div class="rate rate2"></div>
-                  </div>
-                  <p>
-                    jQueryを使い簡単なアニメーションや動的な機能実装しました。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-group">
-              <!-- ここからWordPressカード -->
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="./images/wp_icon.png" alt="" width="60px" height="60px">
-                </div>
-                <div class="skill-item-body">
-                  <h3 class="skill-item-title">WordPress</h3>
-                  <div class="skill-item-rating rating">
-                    <div class="rate rate2"></div>
-                  </div>
-                  <p>ワードプレスに関しては実際に自分のブログを立ち上げ、編集や更新の仕方を勉強しています。</p>
-                </div>
-              </div>
-              <!-- ここからXDカード -->
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="./images/adobeXD_icon.png" alt="" width="60px" height="60px">
-                </div>
-                <div class="skill-item-body">
-                  <h3 class="skill-item-title">XD</h3>
-                  <div class="skill-item-rating rating">
-                    <div class="rate rate3"></div>
-                  </div>
-                  <p>ワイヤーフレームやプロトタイプの作成及び、そのデザインからのコーディングができます。以前、メンタの課題で実際の案件に近い内容のWEBページを、AdobeXDのデザインデータからのコーディングしました。</p>
-                </div>
-              </div>
-            </div>
+      <!-- WORKS -->
+    <section class="works sec section-container"id="s2">
+      <!-- <div class="container"> -->
+        <h2 class="works-head mttl">Works</h2>
+        <div class="tab-wrap">
+          <input id="tab01" type="radio" name="tab" class="tab-switch" checked="checked"><label class="tab-label" for="tab01">WEB制作</label>
+          <div class="tab-content">
+            <!-- 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜1-①〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 -->
+            <figure class="works-card">
+              <a class="works-card-link">
+                <img class="works-img1"src="./images/works-item1.png" alt="">
+              </a>
+              <figcaption class="works-figcaption">
+                <div class="works-card-font"><p>MENTA / 模写課題</p></div>
+                <div class="works-card-font"><p>coding</p></div>
+                <div class="works-card-font"><p><a href="ぺ">LINK</a></p></div>
+              </figcaption>
+            </figure>
+            <!-- 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 -->
           </div>
-      </section>
-
-      <!-- ここからコンタクトセクション  -->
-      <section class="contact container"id="s4">
-        <div class="inner">
-          <h2 class="sec-ttl">Contact</h2>
-        </div>
-        <p class="contact-ttlcaption">お問合せはメールかSNSにてお気軽にどうぞ！</p>
-        <div class="contact-iconBox">
-          <a href="https://twitter.com/masa08230515"><img src="./images/twitter_icon.jpeg"></a>
-          <a><img src="./images/mail_icon.jpeg"></a>
-        </div>
-      </section>
-    </main>
-
-    <!-- ここからフッター -->
-
-    <footer class="footer">
-      <div class="inner">
-        <p></p>
+          <input id="tab02" type="radio" name="tab" class="tab-switch"><label class="tab-label" for="tab02">バナーデザイン</label>
+          <div class="tab-content">
+            <!-- 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜2-①〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 -->
+            <figure class="works-card">
+              <a class="works-card-link">
+                <img class="works-img1"src="./images/kushiro2020.7.10.png" alt="">
+              </a>
+              <figcaption class="works-figcaption">
+                <div class="works-card-font"><p>ほげ / ほげ</p></div>
+                <div class="works-card-font"><p>ほげ</p></div>
+                <div class="works-card-font"><p><a href="ぺ">LINK</a></p></div>
+              </figcaption>
+            </figure> 
+            <!-- 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 --> 
+          </div>
+          <input id="tab03" type="radio" name="tab" class="tab-switch"><label class="tab-label" for="tab03">グラフィックデザイン</label>
+          <div class="tab-content">
+            <!-- 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜3-①〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 -->
+            <figure class="works-card">
+              <a class="works-card-link">
+                <img class="works-img1"src="./images/mainvisual.jpg" alt="">
+              </a>
+              <figcaption class="works-figcaption">
+                <div class="works-card-font"><p>ほげ / ほげ</p></div>
+                <div class="works-card-font"><p>ほげ</p></div>
+                <div class="works-card-font"><p><a href="ぺ">LINK</a></p></div>
+              </figcaption>
+            </figure> 
+            <!-- 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 -->  
+          </div>
+          
       </div>
-    </footer>
         
-    <!-- TOPに戻るボタン -->
-    <div id="pagetop" class="pagetop totop1"><a href="#bnp_top" aria-label="To Top">▲<br>top</a></div>
-        
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./JS/index.js"></script>
-  </body>
+      <!-- </div> -->
+    </section>
+    <!-- SKILL -->
+    <section class="skill"id="s3">
+      <h2 class="skill-head mttl">Skill</h2>
+      <p class="section-lead"><!-- コメント --></p>
+      <div class="skill-list">
+        <div class="skill-group">
+          <!-- ここからHTMLカード -->
+          <div class="skill-item">
+            <div class="skill-image-wrapper">
+              <img class="skill-image" src="./images/html.png" alt="HTMLロゴ" width= "70px" height= "75px">
+            </div>
+            <div class="skill-item-body">
+              <h3 class="skill-item-title">HTML5</h3>
+              <div class="skill-item-rating rating">
+                <div class="rate rate4">
+                </div>
+              </div>
+              <p>セマンティック＆スタイリッシュなコードを意識してのマークアップを心掛けております。依存性が少なく、メンテナンス性の高いコーディングができるように勉強中です。</p>
+            </div>
+          </div>
 
+          <!-- ここからCSSカード -->
+          <div class="skill-item">
+            <div class="skill-image-wrapper">
+              <img class="skill-image" src="./images/css.png" alt="CSSロゴ" width= "70px" height= "75px">
+            </div>
+            <div class="skill-item-body">
+              <h3 class="skill-item-title">CSS3</h3>
+              <div class="skill-item-rating rating">
+                <div class="rate rate3"></div>
+              </div>
+              <p>CSSでの基本的なスタイルの指定ができます。また、レスポンシブデザインでの実装やBOXレイアウトでの実装ができます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <!-- ここからSCSSカード -->
+          <div class="skill-item">
+            <div class="skill-image-wrapper">
+              <img class="skill-image" src="./images/Sass_icon.png" alt="SASSロゴ" width= "70px" height= "75px">
+            </div>
+            <div class="skill-item-body">
+              <h3 class="skill-item-title">SCSS</h3>
+              <div class="skill-item-rating rating">
+                <div class="rate rate2"></div>
+              </div>
+              <p>CSSを勉強した後、SCSSでの基本的な書き方も勉強しました。変数や関数等も使ってよりメンテナンス性の高いコーディングができるよう勉強中です。</p>
+            </div>
+          </div>
+
+          <!-- ここからJavaScriptカード -->
+          <div class="skill-item">
+            <div class="skill-image-wrapper">
+              <img class="skill-image" src="./images/JavaScript.png" alt="JSロゴ" width= "70px" height= "75px">
+            </div>
+            <div class="skill-item-body">
+              <h3 class="skill-item-title">JavaScript</h3>
+              <div class="skill-item-rating rating">
+                <div class="rate rate2"></div>
+              </div>
+              <p>
+                jQueryライブラリをカスタマイズして使い、簡単ですが動的な機能実装ができます。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <!-- ここからWordPressカード -->
+          <div class="skill-item">
+            <div class="skill-image-wrapper">
+              <img class="skill-image" src="./images/wp_icon.png" alt="" width="70px" height="75px">
+            </div>
+            <div class="skill-item-body">
+              <h3 class="skill-item-title">WordPress</h3>
+              <div class="skill-item-rating rating">
+                <div class="rate rate2"></div>
+              </div>
+              <p>ワードプレスに関しては実際に自分のブログを立ち上げ、編集や更新の仕方を勉強しています。ドメインを買い、サーバーはレンタルサーバー(Xサーバー)を契約しました。</p>
+            </div>
+          </div>
+          <!-- ここからXDカード -->
+          <div class="skill-item">
+            <div class="skill-image-wrapper">
+              <img class="skill-image" src="./images/adobeXD_icon.png" alt="" width="70px" height="75px">
+            </div>
+            <div class="skill-item-body">
+              <h3 class="skill-item-title">XD</h3>
+              <div class="skill-item-rating rating">
+                <div class="rate rate3"></div>
+              </div>
+              <p>ワイヤーフレームやプロトタイプの作成及び、そのデザインからのコーディングができます。実際の案件に近い内容のWEBページを、AdobeXDのデザインデータからマークアップした経験があります。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ここからギャラリーセクション -->
+    <section class="gallery"id="s4">
+      <div class="container">
+        <h2 class="gallery-head mttl">Gallery</h2>
+        <div class="slider2">
+          <a href="#slide2-1">1</a>
+          <a href="#slide2-2">2</a>
+          <a href="#slide2-3">3</a>
+          <a href="#slide2-4">4</a>
+          <a href="#slide2-5">5</a>
+
+          <div class="slides2">
+            <div id="slide2-1">
+              <img src="./images/Insta10_withPhoto.png" alt="">
+            </div>
+            <div id="slide2-2">
+              <img src="./images/CoffeAndChocolate.png" alt="">
+            </div>
+            <div id="slide2-3">
+              <img src="./images/7yearsold_me.png" alt="">
+            </div>
+            <div id="slide2-4">
+              <img src="./images/woody_shadow.png" alt="">
+            </div>
+            <div id="slide2-5">
+              <img src="./images/baby_me.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>  
+    </section>
+    <!-- ここからコンタクトセクション  -->
+    <section class="contact "id="s5">
+      <div class="container">
+        <h2 class="contact-head mttl">Contact</h2>
+      </div>
+      <p class="contact-ttlcaption">お問合せはメールかSNSにてお気軽にどうぞ！</p>
+      <div class="contact-iconBox">
+        <a href="https://twitter.com/masa08230515"><img src="./images/twitter_icon.jpeg"></a>
+        <a><img src="./images/mail_icon.jpeg"></a>
+      </div>
+    </section>
+  </main>  
+  <div id="pagetop" class="pagetop totop1"><a href="#bnp_top" aria-label="To Top">▲<br>top</a></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
 </html>
