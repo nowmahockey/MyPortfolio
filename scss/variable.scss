@@ -31,12 +31,11 @@ $color_5: #f181b4;
 $color_6: #000;
 
 //フォント--------------------------------
-// @font-face {font-family: "Chicago"; src: url("Chicago_Bold.woff") format("woff");}
+@font-face {font-family: "Chicago"; src: url("Chicago_Bold.woff") format("woff");}
 
-$font_EN : 'Montserrat', sans-serif;
+$font_EN : "krungthep","Chicago", "Lato", sans-serif;
 $font_JA: Helvetica, "游ゴシック", "Yu Gothic", YuGothic, HiraKakuProN-W3, "メイリオ", Meiryo, sans-serif;
 
-// "krungthep","Chicago", "Lato", sans-serif
 
 //セクションBOX
 .sec {
