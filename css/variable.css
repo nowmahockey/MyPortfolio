@@ -2,11 +2,6 @@
 /*--------------------------------
 Media Queries
 ---------------------------------*/
-@font-face {
-  font-family: "Chicago";
-  src: url("Chicago_Bold.woff") format("woff");
-}
-
 .sec {
   position: relative;
   width: 100%;
