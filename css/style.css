@@ -2,6 +2,11 @@
 /*--------------------------------
 Media Queries
 ---------------------------------*/
+@font-face {
+  font-family: "Chicago";
+  src: url("Chicago_Bold.woff") format("woff");
+}
+
 .sec {
   position: relative;
   width: 100%;
@@ -36,7 +41,7 @@ body {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "krungthep", "Chicago", "Lato", "Artifika", sans-serif, serif;
+  font-family: "krungthep", "Chicago", "Lato", sans-serif;
 }
 
 /*--------------------------------
@@ -150,8 +155,12 @@ body {
   height: 750px;
 }
 
-.mv-logo {
-  font-family: "krungthep", "Chicago", "Lato", "Artifika", sans-serif, serif;
+.hidden {
+  opacity: 0;
+}
+
+.console-container {
+  font-family: "krungthep", "Chicago", "Lato", sans-serif;
   font-size: 4em;
   text-align: center;
   height: 200px;
@@ -164,12 +173,21 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+  padding-top: px;
 }
 
 @media (max-width: 899px) {
-  .mv-logo {
+  .console-container {
     font-size: 2em;
   }
+}
+
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+  color: black;
 }
 
 /*--------------------------------
@@ -321,12 +339,12 @@ body {
   padding: 10px;
   font-weight: bold;
   width: 100%;
-  font-family: "krungthep", "Chicago", "Lato", "Artifika", sans-serif, serif;
+  font-family: "krungthep", "Chicago", "Lato", sans-serif;
 }
 
 .acd-content {
   text-align: center;
-  font-family: "krungthep", "Chicago", "Lato", "Artifika", sans-serif, serif;
+  font-family: "krungthep", "Chicago", "Lato", sans-serif;
   height: 0;
   opacity: 0;
   padding: 0 10px;
@@ -336,7 +354,7 @@ body {
 }
 
 .acd-content span {
-  font-family: "krungthep", "Chicago", "Lato", "Artifika", sans-serif, serif;
+  font-family: "krungthep", "Chicago", "Lato", sans-serif;
 }
 
 .acd-check:checked + .acd-label + .acd-content {
@@ -369,13 +387,14 @@ body {
 }
 
 .works-card {
-  width: 100%;
+  width: 30%;
   height: auto;
-  text-align: center;
+  padding: 30px;
 }
 
 @media (max-width: 899px) {
   .works-card {
+    width: 100%;
     padding: 10px;
   }
 }
@@ -387,10 +406,10 @@ body {
 }
 
 .works-img1 {
-  width: 90%;
+  width: 100%;
   max-height: 200px;
   -o-object-fit: contain;
-    object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 460px) {
@@ -404,60 +423,8 @@ body {
 }
 
 .works-card-font {
-  font-family: "krungthep", "Chicago", "Lato", "Artifika", sans-serif, serif;
+  font-family: Helvetica, "游ゴシック", "Yu Gothic", YuGothic, HiraKakuProN-W3, "メイリオ", Meiryo, sans-serif;
   padding: 10px;
-  color: #fff;
-}
-
-.works-card {
-  width: 300px;
-  height: 200px;
-  overflow: hidden;
-  margin: 10px auto 10px;
-  position: relative;
-}
-
-@media (max-width: 460px) {
-  .works-card {
-    margin: 0 auto;
-    max-width: 250px;
-  }
-}
-
-.works-card .caption {
-  font-size: 100%;
-  color: #fff;
-  padding-top: 50px;
-  padding-left: 20px;
-}
-
-.works-card .mask {
-  width: 50%;
-  /* 画像の半分の大きさにする */
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: -50%;
-  /* 枠の左に置いて表示させない */
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.works-card:hover .mask {
-  margin-left: 0px;
-  /* 右にずらして表示する */
-}
-
-.works-card img {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.works-card:hover img {
-  margin-left: 50%;
-  /* 画像を半分サイズ、右にずらす */
 }
 
 .tab-wrap {
@@ -473,7 +440,7 @@ body {
   content: '';
   width: 100%;
   height: 3px;
-  background: #000;
+  background: #fff;
   display: block;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
@@ -481,7 +448,7 @@ body {
 }
 
 .tab-label {
-  color: #fff;
+  color: #000;
   background: #000;
   font-weight: bold;
   white-space: nowrap;
@@ -494,67 +461,28 @@ body {
   z-index: 1;
   cursor: pointer;
   border-radius: 5px 5px 0 0;
-  border: solid 3px #fff;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-@media (max-width: 460px) {
-  .tab-label {
-    border-radius: 0;
-  }
-}
-
-@media (max-width: 460px) {
-  .left-top-radius {
-    border-top-left-radius: 5px;
-  }
-}
-
-@media (max-width: 460px) {
-  .right-top-radius {
-    border-top-right-radius: 5px;
-  }
-}
-
-@media (max-width: 460px) {
-  .bottom-radius {
-    border-radius: 0 0 5px 5px;
-  }
-}
-
 .tab-label:hover {
-  background-color: #000;
-  opacity: 0.5;
+  background: #f0f0f0;
 }
 
 .tab-label:not(:last-of-type) {
   margin-right: 5px;
 }
 
-@media (max-width: 460px) {
-  .tab-label:not(:last-of-type) {
-    margin: 0;
-  }
-}
-
 .tab-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   height: 0;
   overflow: hidden;
   opacity: 0;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 460px) {
   .tab-content {
-    display: block;
     width: 100%;
     padding: 10px;
   }
@@ -562,7 +490,6 @@ body {
 
 .tab-switch:checked + .tab-label {
   background: #fff;
-  color: #000;
 }
 
 .tab-switch:checked + .tab-label + .tab-content {
@@ -572,6 +499,8 @@ body {
   opacity: 1;
   -webkit-transition: .5s opacity;
   transition: .5s opacity;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .tab-switch {
@@ -590,12 +519,6 @@ body {
   border-top-color: #fff;
   border-width: 14px;
   margin-left: -14px;
-}
-
-@media (max-width: 460px) {
-  .tab-switch:checked + .tab-label:after {
-    display: none;
-  }
 }
 
 .tab-switch:checked + .tab-label {
